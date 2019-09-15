@@ -1,6 +1,8 @@
 # code-test
 
 ## Description
+
+This API use Database H2 and for the persistence is JPA for tables and querys. 
 	
 	Header request{
       String Accept,
