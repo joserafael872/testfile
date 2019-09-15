@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: code-test
+  config:
+    name: ${spring.application.name}
+  datasource:
+      url: jdbc:h2:~/test
+      username: sa
+      password:
+      driver-class-name: org.h2.Driver
+  jackson:
+      serialization:
+        FAIL_ON_EMPTY_BEANS: false    
+  h2:
+      console:
+        enabled: true
+        path: /console  
+     
