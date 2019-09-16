@@ -15,7 +15,7 @@ mvnw clean package
 
 docker build -t code-test-gft .
 
-docker run -d -p 8080:8080 code-test-gft
+docker run -d -p 2210:2210 code-test-gft
 
 
 #### Description
@@ -50,7 +50,7 @@ This API use Database H2 and for the persistence is JPA for tables and querys.
 ### Request data
 
 URL : 
-localhost:8080/customers
+localhost:2210/customers
 
 > Test data : 
 > **Header OK:** {
@@ -98,7 +98,7 @@ localhost:8080/customers
 
 
 URL : 
-localhost:8080/customers/2
+localhost:2210/customers/2
 
 > Test data : 
 > **Header OK:** {
