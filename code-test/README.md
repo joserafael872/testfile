@@ -1,6 +1,24 @@
-# code-test
+# Microservice with Spring boot and Docker
 
-## Description
+One Paragraph of project description goes here
+
+## Prerequisites
+
+you should install Java >=8 and Docker
+
+
+### Installing
+
+git clone https://github.com/joserafael872/testfile.git
+
+./mvnw clean package
+
+docker build -t code-test-gft .
+
+docker run -d -p 8080:8080 code-test-gft
+
+
+#### Description
 
 This API use Database H2 and for the persistence is JPA for tables and querys. 
 	
@@ -15,7 +33,7 @@ This API use Database H2 and for the persistence is JPA for tables and querys.
 1. Get all customers
 2. Get one specific customer
 
-### Versioning
+#### Versioning
 
 0.0.1
 
@@ -32,7 +50,7 @@ This API use Database H2 and for the persistence is JPA for tables and querys.
 ### Request data
 
 URL : 
-localhost:2210/customers
+localhost:8080/customers
 
 > Test data : 
 > **Header OK:** {
@@ -80,7 +98,7 @@ localhost:2210/customers
 
 
 URL : 
-localhost:2210/customers/2
+localhost:8080/customers/2
 
 > Test data : 
 > **Header OK:** {
@@ -107,23 +125,4 @@ localhost:2210/customers/2
         }
     ]
 }
-
-## Built With
-* Maven
-* Spring
-* SpringBoot
-
-
-### Prerequisites
-You need to have installed:
-		
- - Java 1.8  		
- - Maven 		
- - Eclipse IDE or  Spring Tool Suite(STS)
-
-## Deployment
-
-	mvn spring boot:run
-	
-Or from Spring Tool Suite(STS) IDE right click on the project -> Run As -> Spring Boot App
 
