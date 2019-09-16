@@ -11,7 +11,7 @@ you should install Java >=8 and Docker
 
 git clone https://github.com/joserafael872/testfile.git
 
-./mvnw clean package
+mvnw clean package
 
 docker build -t code-test-gft .
 
