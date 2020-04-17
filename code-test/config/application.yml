@@ -1,0 +1,13 @@
+controller:
+  base-path:
+    all: customers
+    one: customers/{customerId}
+    
+server:
+  port: 2210
+  
+customers:
+  data1: '{"customerId": "00021244","originChannel": "BANCA SERFIN","fullName": "ACEVES GONZALEZ ADOLFO","condition": "CLIENTE","segment": "PREMIER","address": "LOMA BONITA 1839","customerCategory": "FISICA"}'
+  data2: '{"customerId": "00021245","originChannel": "BANCA SERFIN","fullName": "ACEVES GONZALEZ ADOLFO 2","condition": "CLIENTE 2","segment": "PREMIER 2","address": "LOMA BONITA 1839","customerCategory": "FISICA"}'
+  data3: '{"customerId": "00021246","originChannel": "BANCA SERFIN","fullName": "ACEVES GONZALEZ ADOLFO 3","condition": "CLIENTE 3","segment": "PREMIER 3","address": "LOMA BONITA 1839","customerCategory": "FISICA"}'
+

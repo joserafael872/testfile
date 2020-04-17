@@ -48,7 +48,7 @@ public class CustomersServiceImpl implements CustomersService {
 				customersData.add(convertEntityToPojo(entity));
 			}
 
-			alResponse.setCustomersData(customersData);
+			alResponse.setCustomers(customersData);
 		} catch (IOException e) {
 			System.out.println("error " + e.getMessage());
 		}
@@ -97,7 +97,7 @@ public class CustomersServiceImpl implements CustomersService {
 		}
 		CustomersData alResponse = new CustomersData();
 
-		alResponse.setCustomersData(customersData);
+		alResponse.setCustomers(customersData);
 
 		return alResponse;
 	}

@@ -32,9 +32,8 @@ public class CustomerController {
 			@RequestHeader(value = "x-ibm-client-id", required = true) String ibmClientId,
 			@RequestHeader(value = "Authorization", required = false) String authorization,
 			@RequestHeader(value = "x-santander-global-id", required = false) String santanderGlobalId) {
-		CustomersData response = new CustomersData();
-
-		response = customersService.getCustomers();
+		
+		CustomersData response  = customersService.getCustomers();
 
 		return response;
 
@@ -48,9 +47,8 @@ public class CustomerController {
 			@RequestHeader(value = "x-ibm-client-id", required = true) String ibmClientId,
 			@RequestHeader(value = "Authorization", required = false) String authorization,
 			@RequestHeader(value = "x-santander-global-id", required = false) String santanderGlobalId) {
-		CustomersData response = new CustomersData();
-
-		response = customersService.getOneCustomer(customerId);
+		
+		CustomersData response  = customersService.getOneCustomer(customerId);
 
 		return response;
 

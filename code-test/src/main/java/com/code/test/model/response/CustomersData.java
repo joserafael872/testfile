@@ -21,5 +21,5 @@ public class CustomersData {
 	/**
 	 * Customers details list.
 	 */
-	private List<CustomerDetail> customersData;
+	private List<CustomerDetail> customers;
 }
